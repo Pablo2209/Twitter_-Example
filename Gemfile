@@ -28,6 +28,12 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
+# Gema Bulma proporciona componentes frontend listos para usar que puede combinar fácilmente para crear interfaces web receptivas
+gem 'bulma', '~> 0.1.0'
+
+# Gema Simple_Form tiene como objetivo ser lo más flexible posible mientras lo ayuda con componentes poderosos para crear sus formularios.
+gem 'simple_form', '~> 5.1'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -42,7 +48,14 @@ group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  # Gema para deteccion de errores
+  gem 'better_errors', '~> 2.9', '>= 2.9.1'
+  # Gema para manejar fácilmente eventos en modificaciones del sistema de archivos
+  gem 'guard', '~> 2.16', '>= 2.16.2'
+  # Gema para recargar automáticamente el navegador cuando se modifican los archivos de vista
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
 end
+
 
 group :test do
   # Adds support for Capybara system testing and selenium driver

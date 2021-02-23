@@ -27,12 +27,15 @@ gem 'jbuilder', '~> 2.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
-
 # Gema Bulma proporciona componentes frontend listos para usar que puede combinar fácilmente para crear interfaces web receptivas
 gem 'bulma', '~> 0.1.0'
-
 # Gema Simple_Form tiene como objetivo ser lo más flexible posible mientras lo ayuda con componentes poderosos para crear sus formularios.
 gem 'simple_form', '~> 5.1'
+# Gema que un asistente de vista de Rails configurable y documentado para agregar gravatars a su aplicación Rails
+gem 'gravatar_image_tag', '~> 1.2'
+# Gema para la solución de autenticación flexible para Rails con Warden
+gem 'devise', '~> 4.7', '>= 4.7.3'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

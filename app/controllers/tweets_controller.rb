@@ -2,8 +2,9 @@ class TweetsController < ApplicationController
   before_action :set_tweet, only: %i[ show edit update destroy ]
 
   # GET /tweets or /tweets.json
+  # Configuracion para que los tweets se muestren en forma descendente
   def index
-    @tweets = Tweet.all
+    @tweets = Tweet.all.order("created_at DESC")
   end
 
   # GET /tweets/1 or /tweets/1.json
